@@ -18,96 +18,91 @@ const Home = (props) => {
         <meta property="og:title" content="Company-Homepage" />
       </Helmet>
       <Navbar8
-        link1={
+        home={
           <Fragment>
             <span className="home-text10">Home</span>
           </Fragment>
         }
-        link2={
-          <Fragment>
-            <span className="home-text11">Solutions</span>
-          </Fragment>
-        }
         link3={
           <Fragment>
-            <span className="home-text12">About Us</span>
-          </Fragment>
-        }
-        link4={
-          <Fragment>
-            <span className="home-text13">Contact Us</span>
+            <span className="home-text11">Contact</span>
           </Fragment>
         }
         page1={
           <Fragment>
-            <span className="home-text14">Page One</span>
+            <span className="home-text12">Page One</span>
           </Fragment>
         }
         page2={
           <Fragment>
-            <span className="home-text15">Page Two</span>
+            <span className="home-text13">Page Two</span>
           </Fragment>
         }
         page3={
           <Fragment>
-            <span className="home-text16">Page Three</span>
+            <span className="home-text14">Page Three</span>
           </Fragment>
         }
         page4={
           <Fragment>
-            <span className="home-text17">Page Four</span>
+            <span className="home-text15">Page Four</span>
           </Fragment>
         }
         link21={
           <Fragment>
-            <span className="home-text18">Contact</span>
+            <span className="home-text16">Contact</span>
           </Fragment>
         }
         action1={
           <Fragment>
-            <span className="home-text19">Learn More</span>
+            <span className="home-text17">Learn More</span>
           </Fragment>
         }
         action2={
           <Fragment>
-            <span className="home-text20">Contact Us</span>
+            <span className="home-text18">Contact Us</span>
+          </Fragment>
+        }
+        solution={
+          <Fragment>
+            <span className="home-text19">Solutions</span>
           </Fragment>
         }
         page1Description={
           <Fragment>
-            <span className="home-text21">Page One Description</span>
+            <span className="home-text20">Page One Description</span>
           </Fragment>
         }
         page2Description={
           <Fragment>
-            <span className="home-text22">Page Two Description</span>
+            <span className="home-text21">Page Two Description</span>
           </Fragment>
         }
         page3Description={
           <Fragment>
-            <span className="home-text23">Page Three Description</span>
+            <span className="home-text22">Page Three Description</span>
           </Fragment>
         }
         page4Description={
           <Fragment>
-            <span className="home-text24">Page Four Description</span>
+            <span className="home-text23">Page Four Description</span>
           </Fragment>
         }
       ></Navbar8>
       <Hero17
         action1={
           <Fragment>
-            <span className="home-text25">Learn More</span>
+            <span className="home-text24">Learn More</span>
           </Fragment>
         }
         action2={
           <Fragment>
-            <span className="home-text26">Contact Us</span>
+            <span className="home-text25">Contact Us</span>
           </Fragment>
         }
         content1={
           <Fragment>
-            <span className="home-text27">
+            <span className="home-text26">
               With over 25 years of experience, Greatus is your trusted partner
               for IT infrastructure design, software development, and
               cybersecurity solutions.
@@ -116,7 +111,7 @@ const Home = (props) => {
         }
         heading1={
           <Fragment>
-            <span className="home-text28">
+            <span className="home-text27">
               Empower Your Business with Greatus IT Consultancy
             </span>
           </Fragment>
@@ -125,12 +120,12 @@ const Home = (props) => {
       <CTA26
         action1={
           <Fragment>
-            <span className="home-text29">Get in touch</span>
+            <span className="home-text28">Get in touch</span>
           </Fragment>
         }
         content1={
           <Fragment>
-            <span className="home-text30">
+            <span className="home-text29">
               Contact us today to schedule a consultation and see how Greatus
               can help your business thrive.
             </span>
@@ -138,13 +133,18 @@ const Home = (props) => {
         }
         heading1={
           <Fragment>
-            <span className="home-text31">
+            <span className="home-text30">
               Ready to elevate your IT infrastructure?
             </span>
           </Fragment>
         }
       ></CTA26>
       <Features25
+        heading1={
+          <Fragment>
+            <span className="home-text31">Our Solutions</span>
+          </Fragment>
+        }
         feature1Title={
           <Fragment>
             <span className="home-text32">
@@ -186,28 +186,23 @@ const Home = (props) => {
             </span>
           </Fragment>
         }
-        heading1={
-          <Fragment>
-            <span className="home-text38">Our Solutions</span>
-          </Fragment>
-        }
       ></Features25>
       <Contact12
         email1={
           <Fragment>
-            <span className="home-text39">cs@greatus.io</span>
+            <span className="home-text38">cs@greatus.io</span>
           </Fragment>
         }
         address1={
           <Fragment>
-            <span className="home-text40">
+            <span className="home-text39">
               141 Walker Street, North Sydney, NSW 2060
             </span>
           </Fragment>
         }
         content1={
           <Fragment>
-            <span className="home-text41">
+            <span className="home-text40">
               <span>Your Partner in IT Excellence</span>
               <br></br>
               <br></br>
@@ -216,7 +211,7 @@ const Home = (props) => {
         }
         heading1={
           <Fragment>
-            <span className="home-text45">
+            <span className="home-text44">
               <span>Connect with Us</span>
               <br></br>
             </span>
@@ -226,22 +221,22 @@ const Home = (props) => {
       <Footer4
         text={
           <Fragment>
-            <span className="home-text48">GREATUS</span>
+            <span className="home-text47">GREATUS</span>
           </Fragment>
         }
         termsLink={
           <Fragment>
-            <span className="home-text49">Terms of Service</span>
+            <span className="home-text48">Terms of Service</span>
           </Fragment>
         }
         cookiesLink={
           <Fragment>
-            <span className="home-text50">Cookies Policy</span>
+            <span className="home-text49">Cookies Policy</span>
           </Fragment>
         }
         privacyLink={
           <Fragment>
-            <span className="home-text51">Privacy Policy</span>
+            <span className="home-text50">Privacy Policy</span>
           </Fragment>
         }
       ></Footer4>

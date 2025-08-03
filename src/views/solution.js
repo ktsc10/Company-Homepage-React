@@ -15,84 +15,84 @@ const Solution = (props) => {
         <meta property="og:title" content="Solution - Company-Homepage" />
       </Helmet>
       <Navbar8
-        link1={
+        home={
           <Fragment>
             <span className="solution-text10">Home</span>
           </Fragment>
         }
-        link2={
-          <Fragment>
-            <span className="solution-text11">Solutions</span>
-          </Fragment>
-        }
         link3={
           <Fragment>
-            <span className="solution-text12">About Us</span>
-          </Fragment>
-        }
-        link4={
-          <Fragment>
-            <span className="solution-text13">Contact Us</span>
+            <span className="solution-text11">Contact</span>
           </Fragment>
         }
         page1={
           <Fragment>
-            <span className="solution-text14">Page One</span>
+            <span className="solution-text12">Page One</span>
           </Fragment>
         }
         page2={
           <Fragment>
-            <span className="solution-text15">Page Two</span>
+            <span className="solution-text13">Page Two</span>
           </Fragment>
         }
         page3={
           <Fragment>
-            <span className="solution-text16">Page Three</span>
+            <span className="solution-text14">Page Three</span>
           </Fragment>
         }
         page4={
           <Fragment>
-            <span className="solution-text17">Page Four</span>
+            <span className="solution-text15">Page Four</span>
           </Fragment>
         }
         link21={
           <Fragment>
-            <span className="solution-text18">Contact</span>
+            <span className="solution-text16">Contact</span>
           </Fragment>
         }
         action1={
           <Fragment>
-            <span className="solution-text19">Learn More</span>
+            <span className="solution-text17">Learn More</span>
           </Fragment>
         }
         action2={
           <Fragment>
-            <span className="solution-text20">Contact Us</span>
+            <span className="solution-text18">Contact Us</span>
+          </Fragment>
+        }
+        solution={
+          <Fragment>
+            <span className="solution-text19">Solutions</span>
           </Fragment>
         }
         rootClassName="navbar8root-class-name1"
         page1Description={
           <Fragment>
-            <span className="solution-text21">Page One Description</span>
+            <span className="solution-text20">Page One Description</span>
           </Fragment>
         }
         page2Description={
           <Fragment>
-            <span className="solution-text22">Page Two Description</span>
+            <span className="solution-text21">Page Two Description</span>
           </Fragment>
         }
         page3Description={
           <Fragment>
-            <span className="solution-text23">Page Three Description</span>
+            <span className="solution-text22">Page Three Description</span>
           </Fragment>
         }
         page4Description={
           <Fragment>
-            <span className="solution-text24">Page Four Description</span>
+            <span className="solution-text23">Page Four Description</span>
           </Fragment>
         }
       ></Navbar8>
       <Features25
+        heading1={
+          <Fragment>
+            <span className="solution-text24">Our Solutions</span>
+          </Fragment>
+        }
         feature1Title={
           <Fragment>
             <span className="solution-text25">
@@ -135,31 +135,26 @@ const Solution = (props) => {
             </span>
           </Fragment>
         }
-        heading1={
-          <Fragment>
-            <span className="solution-text31">Our Solutions</span>
-          </Fragment>
-        }
       ></Features25>
       <Footer4
         text={
           <Fragment>
-            <span className="solution-text32">GREATUS</span>
+            <span className="solution-text31">GREATUS</span>
           </Fragment>
         }
         termsLink={
           <Fragment>
-            <span className="solution-text33">Terms of Service</span>
+            <span className="solution-text32">Terms of Service</span>
           </Fragment>
         }
         cookiesLink={
           <Fragment>
-            <span className="solution-text34">Cookies Policy</span>
+            <span className="solution-text33">Cookies Policy</span>
           </Fragment>
         }
         privacyLink={
           <Fragment>
-            <span className="solution-text35">Privacy Policy</span>
+            <span className="solution-text34">Privacy Policy</span>
           </Fragment>
         }
         rootClassName="footer4root-class-name1"

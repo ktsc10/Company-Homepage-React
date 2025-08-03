@@ -15,99 +15,94 @@ const Contact = (props) => {
         <meta property="og:title" content="Contact - Company-Homepage" />
       </Helmet>
       <Navbar8
-        link1={
+        home={
           <Fragment>
             <span className="contact-text10">Home</span>
           </Fragment>
         }
-        link2={
-          <Fragment>
-            <span className="contact-text11">Solutions</span>
-          </Fragment>
-        }
         link3={
           <Fragment>
-            <span className="contact-text12">About Us</span>
-          </Fragment>
-        }
-        link4={
-          <Fragment>
-            <span className="contact-text13">Contact Us</span>
+            <span className="contact-text11">Contact</span>
           </Fragment>
         }
         page1={
           <Fragment>
-            <span className="contact-text14">Page One</span>
+            <span className="contact-text12">Page One</span>
           </Fragment>
         }
         page2={
           <Fragment>
-            <span className="contact-text15">Page Two</span>
+            <span className="contact-text13">Page Two</span>
           </Fragment>
         }
         page3={
           <Fragment>
-            <span className="contact-text16">Page Three</span>
+            <span className="contact-text14">Page Three</span>
           </Fragment>
         }
         page4={
           <Fragment>
-            <span className="contact-text17">Page Four</span>
+            <span className="contact-text15">Page Four</span>
           </Fragment>
         }
         link21={
           <Fragment>
-            <span className="contact-text18">Contact</span>
+            <span className="contact-text16">Contact</span>
           </Fragment>
         }
         action1={
           <Fragment>
-            <span className="contact-text19">Learn More</span>
+            <span className="contact-text17">Learn More</span>
           </Fragment>
         }
         action2={
           <Fragment>
-            <span className="contact-text20">Contact Us</span>
+            <span className="contact-text18">Contact Us</span>
+          </Fragment>
+        }
+        solution={
+          <Fragment>
+            <span className="contact-text19">Solutions</span>
           </Fragment>
         }
         rootClassName="navbar8root-class-name"
         page1Description={
           <Fragment>
-            <span className="contact-text21">Page One Description</span>
+            <span className="contact-text20">Page One Description</span>
           </Fragment>
         }
         page2Description={
           <Fragment>
-            <span className="contact-text22">Page Two Description</span>
+            <span className="contact-text21">Page Two Description</span>
           </Fragment>
         }
         page3Description={
           <Fragment>
-            <span className="contact-text23">Page Three Description</span>
+            <span className="contact-text22">Page Three Description</span>
           </Fragment>
         }
         page4Description={
           <Fragment>
-            <span className="contact-text24">Page Four Description</span>
+            <span className="contact-text23">Page Four Description</span>
           </Fragment>
         }
       ></Navbar8>
       <Contact12
         email1={
           <Fragment>
-            <span className="contact-text25">cs@greatus.io</span>
+            <span className="contact-text24">cs@greatus.io</span>
           </Fragment>
         }
         address1={
           <Fragment>
-            <span className="contact-text26">
+            <span className="contact-text25">
               141 Walker Street, North Sydney, NSW 2060
             </span>
           </Fragment>
         }
         content1={
           <Fragment>
-            <span className="contact-text27">
+            <span className="contact-text26">
               <span>Your Partner in IT Excellence</span>
               <br></br>
               <br></br>
@@ -116,7 +111,7 @@ const Contact = (props) => {
         }
         heading1={
           <Fragment>
-            <span className="contact-text31">
+            <span className="contact-text30">
               <span>Connect with Us</span>
               <br></br>
             </span>
@@ -127,22 +122,22 @@ const Contact = (props) => {
       <Footer4
         text={
           <Fragment>
-            <span className="contact-text34">GREATUS</span>
+            <span className="contact-text33">GREATUS</span>
           </Fragment>
         }
         termsLink={
           <Fragment>
-            <span className="contact-text35">Terms of Service</span>
+            <span className="contact-text34">Terms of Service</span>
           </Fragment>
         }
         cookiesLink={
           <Fragment>
-            <span className="contact-text36">Cookies Policy</span>
+            <span className="contact-text35">Cookies Policy</span>
           </Fragment>
         }
         privacyLink={
           <Fragment>
-            <span className="contact-text37">Privacy Policy</span>
+            <span className="contact-text36">Privacy Policy</span>
           </Fragment>
         }
         rootClassName="footer4root-class-name"

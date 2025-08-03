@@ -91,10 +91,6 @@
 }
  
 .solution-text31 {
-  display: inline-block;
-}
- 
-.solution-text32 {
   color: #033366;
   display: inline-block;
   font-size: 36px;
@@ -103,14 +99,14 @@
   text-transform: uppercase;
 }
  
+.solution-text32 {
+  display: inline-block;
+}
+ 
 .solution-text33 {
   display: inline-block;
 }
  
 .solution-text34 {
-  display: inline-block;
-}
- 
-.solution-text35 {
   display: inline-block;
 }
