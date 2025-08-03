@@ -1,210 +1,59 @@
-import React, { Fragment } from 'react'
-
+import React from 'react'
 import { Helmet } from 'react-helmet'
+import { useTranslation } from 'react-i18next'
 
 import Navbar8 from '../components/navbar8'
 import Features25 from '../components/features25'
 import Footer4 from '../components/footer4'
 import './solutions.css'
 
-const Solutions = (props) => {
+const Solutions = () => {
+  const { t } = useTranslation()
+
   return (
     <div className="solutions-container">
       <Helmet>
-        <title>Solutions - Company Homepage</title>
-        <meta property="og:title" content="Solutions - Company Homepage" />
+        <title>{t('solutions.meta.title')}</title>
+        <meta property="og:title" content={t('solutions.meta.title')} />
       </Helmet>
+
       <Navbar8
-        link1={
-          <Fragment>
-            <span className="solutions-text10">
-              <span>{/*locale-text_tiF6tN*/}</span>
-            </span>
-          </Fragment>
-        }
-        link2={
-          <Fragment>
-            <span className="solutions-text11">
-              <span>{/*locale-text_4YXUu9*/}</span>
-            </span>
-          </Fragment>
-        }
-        link3={
-          <Fragment>
-            <span className="solutions-text12">
-              <span>{/*locale-text_IGpPvP*/}</span>
-            </span>
-          </Fragment>
-        }
-        link4={
-          <Fragment>
-            <span className="solutions-text13">
-              <span>{/*locale-text_66cQyZ*/}</span>
-            </span>
-          </Fragment>
-        }
-        page1={
-          <Fragment>
-            <span className="solutions-text14">
-              <span>{/*locale-text_iwS1Om*/}</span>
-            </span>
-          </Fragment>
-        }
-        page2={
-          <Fragment>
-            <span className="solutions-text15">
-              <span>{/*locale-text_sEJBaK*/}</span>
-            </span>
-          </Fragment>
-        }
-        page3={
-          <Fragment>
-            <span className="solutions-text16">
-              <span>{/*locale-text_kpYdfk*/}</span>
-            </span>
-          </Fragment>
-        }
-        page4={
-          <Fragment>
-            <span className="solutions-text17">
-              <span>{/*locale-text_0PC_yU*/}</span>
-            </span>
-          </Fragment>
-        }
-        link21={
-          <Fragment>
-            <span className="solutions-text18">
-              <span>{/*locale-text_hBGdl9*/}</span>
-            </span>
-          </Fragment>
-        }
-        action1={
-          <Fragment>
-            <span className="solutions-text19">
-              <span>{/*locale-text_VfmboB*/}</span>
-            </span>
-          </Fragment>
-        }
-        action2={
-          <Fragment>
-            <span className="solutions-text20">
-              <span>{/*locale-text_n-5zB8*/}</span>
-            </span>
-          </Fragment>
-        }
+        link1={<span>{t('solutions.nav.home')}</span>}
+        link2={<span>{t('solutions.nav.solutions')}</span>}
+        link3={<span>{t('solutions.nav.contact')}</span>}
+        link4={<span>{t('solutions.nav.blog')}</span>}
+        page1={<span>{t('solutions.nav.services')}</span>}
+        page2={<span>{t('solutions.nav.products')}</span>}
+        page3={<span>{t('solutions.nav.careers')}</span>}
+        page4={<span>{t('solutions.nav.about')}</span>}
+        link21={<span>{t('solutions.nav.language')}</span>}
+        action1={<span>{t('solutions.nav.learnMore')}</span>}
+        action2={<span>{t('solutions.nav.contactUs')}</span>}
+        page1Description={<span>{t('solutions.navdesc.services')}</span>}
+        page2Description={<span>{t('solutions.navdesc.products')}</span>}
+        page3Description={<span>{t('solutions.navdesc.careers')}</span>}
+        page4Description={<span>{t('solutions.navdesc.about')}</span>}
         rootClassName="navbar8root-class-name"
-        page1Description={
-          <Fragment>
-            <span className="solutions-text21">
-              <span>{/*locale-text_EAgPuy*/}</span>
-            </span>
-          </Fragment>
-        }
-        page2Description={
-          <Fragment>
-            <span className="solutions-text22">
-              <span>{/*locale-text_9LpEzV*/}</span>
-            </span>
-          </Fragment>
-        }
-        page3Description={
-          <Fragment>
-            <span className="solutions-text23">
-              <span>{/*locale-text_8a4AXV*/}</span>
-            </span>
-          </Fragment>
-        }
-        page4Description={
-          <Fragment>
-            <span className="solutions-text24">
-              <span>{/*locale-text_3aaMms*/}</span>
-            </span>
-          </Fragment>
-        }
-      ></Navbar8>
+      />
+
       <Features25
-        heading11={
-          <Fragment>
-            <span className="solutions-text25">
-              <span>{/*locale-text_ToPR-V*/}</span>
-            </span>
-          </Fragment>
-        }
-        feature1Title={
-          <Fragment>
-            <span className="solutions-text26">
-              <span>{/*locale-text_xHlNTh*/}</span>
-            </span>
-          </Fragment>
-        }
-        feature2Title={
-          <Fragment>
-            <span className="solutions-text27">
-              <span>{/*locale-text_TUewRN*/}</span>
-            </span>
-          </Fragment>
-        }
-        feature3Title={
-          <Fragment>
-            <span className="solutions-text28">
-              <span>{/*locale-text_DXoeiM*/}</span>
-            </span>
-          </Fragment>
-        }
+        heading11={<span>{t('solutions.features.heading')}</span>}
+        feature1Title={<span>{t('solutions.features.feature1.title')}</span>}
+        feature2Title={<span>{t('solutions.features.feature2.title')}</span>}
+        feature3Title={<span>{t('solutions.features.feature3.title')}</span>}
+        feature1Description={<span>{t('solutions.features.feature1.desc')}</span>}
+        feature2Description={<span>{t('solutions.features.feature2.desc')}</span>}
+        feature3Description={<span>{t('solutions.features.feature3.desc')}</span>}
         rootClassName="features25root-class-name"
-        feature1Description={
-          <Fragment>
-            <span className="solutions-text29">
-              <span>{/*locale-text_FGnkAr*/}</span>
-            </span>
-          </Fragment>
-        }
-        feature2Description={
-          <Fragment>
-            <span className="solutions-text30">
-              <span>{/*locale-text_6R2CH5*/}</span>
-            </span>
-          </Fragment>
-        }
-        feature3Description={
-          <Fragment>
-            <span className="solutions-text31">
-              <span>{/*locale-text_nqG-8t*/}</span>
-            </span>
-          </Fragment>
-        }
-      ></Features25>
+      />
+
       <Footer4
-        text={
-          <Fragment>
-            <span className="solutions-text32">
-              <span>{/*locale-text_shdqfg*/}</span>
-            </span>
-          </Fragment>
-        }
-        termsLink={
-          <Fragment>
-            <span className="solutions-text33">
-              <span>{/*locale-text_4RIQJz*/}</span>
-            </span>
-          </Fragment>
-        }
-        cookiesLink={
-          <Fragment>
-            <span className="solutions-text34">
-              <span>{/*locale-text_xIzOAU*/}</span>
-            </span>
-          </Fragment>
-        }
-        privacyLink={
-          <Fragment>
-            <span className="solutions-text35">
-              <span>{/*locale-text_A9HI2E*/}</span>
-            </span>
-          </Fragment>
-        }
+        text={<span>{t('solutions.footer.copy')}</span>}
+        termsLink={<span>{t('solutions.footer.terms')}</span>}
+        cookiesLink={<span>{t('solutions.footer.cookies')}</span>}
+        privacyLink={<span>{t('solutions.footer.privacy')}</span>}
         rootClassName="footer4root-class-name"
-      ></Footer4>
+      />
     </div>
   )
 }
