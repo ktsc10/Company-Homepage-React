@@ -1,64 +1,72 @@
 {
-  "homepage": {
-    "meta": {
-      "title": "Company Homepage"
-    },
-    "nav": {
-      "home": "Home",
-      "solutions": "Solutions",
-      "contact": "Contact",
-      "blog": "Blog",
-      "services": "Services",
-      "products": "Products",
-      "careers": "Careers",
-      "about": "About",
-      "language": "English",
-      "learnMore": "Learn More",
-      "contactUs": "Contact Us"
-    },
-    "navdesc": {
-      "services": "Explore our IT services",
-      "products": "Check out our products",
-      "careers": "Join our team",
-      "about": "Who we are"
-    },
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "contact": "Contact",
+    "blog": "Blog",
+    "services": "Services",
+    "products": "Products",
+    "careers": "Careers",
+    "about": "About",
+    "language": "Language",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us"
+  },
+  "navdesc": {
+    "services": "Our tailored services for all industries",
+    "products": "Explore our innovative products",
+    "careers": "Join our amazing team",
+    "about": "Who we are and what we stand for"
+  },
+  "home": {
     "hero": {
-      "heading": "Expert IT Consultancy Services",
-      "description": "Greatus offers top-notch IT consultancy services with over 25 years of experience in the industry.",
-      "learnMore": "Learn More",
-      "contactUs": "Contact Us"
+      "heading": "Empowering Digital Solutions",
+      "content": "GreatUS delivers cutting-edge technology that transforms your business.",
+      "cta1": "Get Started",
+      "cta2": "Watch Demo"
     },
     "cta": {
-      "heading": "Need Help with IT?",
-      "text": "We’re ready to assist you with digital transformation.",
-      "contactNow": "Contact Now"
+      "heading": "Ready to Elevate Your Business?",
+      "content": "Connect with our experts to unlock new possibilities.",
+      "cta": "Schedule a Call"
+    },
+    "features": {
+      "heading": "What We Offer",
+      "feature1Title": "Smart Automation",
+      "feature1Desc": "Streamline workflows with AI-driven automation.",
+      "feature2Title": "Secure Infrastructure",
+      "feature2Desc": "Enterprise-grade security built in.",
+      "feature3Title": "Real-Time Analytics",
+      "feature3Desc": "Insights to power better decisions."
+    }
+  },
+  "solutions": {
+    "meta": {
+      "title": "Solutions - Company Homepage"
     },
     "features": {
       "heading": "Our Solutions",
-      "feature1": {
-        "title": "Cloud Migration",
-        "desc": "Seamlessly migrate your infrastructure to the cloud"
-      },
-      "feature2": {
-        "title": "Cybersecurity",
-        "desc": "Protect your business from modern threats"
-      },
-      "feature3": {
-        "title": "Software Development",
-        "desc": "Custom applications tailored to your needs"
-      }
-    },
-    "contact": {
-      "email": "contact@greatus.io",
-      "address": "123 Tech Avenue, Melbourne",
-      "heading": "Get in Touch",
-      "body": "Send us a message or give us a call."
-    },
-    "footer": {
-      "copy": "© 2025 Greatus. All rights reserved.",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookie Settings"
+      "feature1Title": "Cloud Integration",
+      "feature1Desc": "Seamless integration with cloud services.",
+      "feature2Title": "Cybersecurity",
+      "feature2Desc": "End-to-end protection for your data.",
+      "feature3Title": "DevOps Consulting",
+      "feature3Desc": "Accelerate deployment cycles with our DevOps services."
     }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact - Company Homepage"
+    },
+    "heading": "Get in Touch",
+    "email": "Email us at: contact@greatus.io",
+    "address": "141 Walker St, North Sydney NSW 2060",
+    "content": "Have a question or want to work together? Let us know!"
+  },
+  "footer": {
+    "copy": "© 2025 GreatUS. All rights reserved.",
+    "terms": "Terms & Conditions",
+    "cookies": "Cookie Policy",
+    "privacy": "Privacy Policy"
   }
 }
