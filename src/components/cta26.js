@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -16,8 +15,8 @@ const CTA26 = (props) => {
                 <span className="thq-heading-2">
                   {props.heading1 ?? (
                     <Fragment>
-                      <span className="cta26-text5">
-                        <span>{/*locale-text_Yj5Ybn*/}</span>
+                      <span className="cta26-text6">
+                        Ready to elevate your IT infrastructure?
                       </span>
                     </Fragment>
                   )}
@@ -26,7 +25,8 @@ const CTA26 = (props) => {
                   {props.content1 ?? (
                     <Fragment>
                       <span className="cta26-text4">
-                        <span>{/*locale-text_FOeizN*/}</span>
+                        Contact us today to schedule a consultation and see how
+                        Greatus can help your business thrive.
                       </span>
                     </Fragment>
                   )}
@@ -37,15 +37,13 @@ const CTA26 = (props) => {
                   type="button"
                   className="thq-button-filled cta26-button"
                 >
-                  <Link to="/contact" className="cta26-navlink">
+                  <span>
                     {props.action1 ?? (
                       <Fragment>
-                        <span className="cta26-text3">
-                          <span>{/*locale-text_UUqErt*/}</span>
-                        </span>
+                        <span className="cta26-text5">Get in touch</span>
                       </Fragment>
                     )}
-                  </Link>
+                  </span>
                 </button>
               </div>
             </div>
@@ -57,14 +55,14 @@ const CTA26 = (props) => {
 }
 
 CTA26.defaultProps = {
-  action1: undefined,
   content1: undefined,
+  action1: undefined,
   heading1: undefined,
 }
 
 CTA26.propTypes = {
-  action1: PropTypes.element,
   content1: PropTypes.element,
+  action1: PropTypes.element,
   heading1: PropTypes.element,
 }
 

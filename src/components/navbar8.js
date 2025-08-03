@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -9,77 +8,96 @@ const Navbar8 = (props) => {
   const [link5AccordionOpen, setLink5AccordionOpen] = useState(false)
   const [link5DropdownVisible, setLink5DropdownVisible] = useState(false)
   return (
-    <header className={`navbar8-container1 ${props.rootClassName} `}>
+    <header className="navbar8-container1">
       <header data-thq="thq-navbar" className="navbar8-navbar-interactive">
         <img
           alt={props.logoAlt}
-          src={props.image1Src1}
-          loading={props.image1Loading}
+          src={props.logoSrc}
           className="navbar8-image1"
         />
         <div data-thq="thq-navbar-nav" className="navbar8-desktop-menu">
           <nav className="navbar8-links1">
-            <Link to="/" className="navbar8-link11 thq-body-small thq-link">
+            <a
+              href={props.link1Url}
+              className="navbar8-link11 thq-link thq-body-small"
+            >
               {props.link1 ?? (
                 <Fragment>
-                  <span className="navbar8-text15">
-                    <span>{/*locale-text_BqFYNC*/}</span>
-                  </span>
+                  <span className="navbar8-text15">Home</span>
                 </Fragment>
               )}
-            </Link>
-            <Link
-              to="/solutions"
-              className="navbar8-link21 thq-body-small thq-link"
-            >
+            </a>
+            <a href={props.link2Url} className="thq-link thq-body-small">
               {props.link2 ?? (
                 <Fragment>
-                  <span className="navbar8-text17">
-                    <span>{/*locale-text_BwoRTA*/}</span>
-                  </span>
+                  <span className="navbar8-text20">Services</span>
                 </Fragment>
               )}
-            </Link>
-            <Link
-              to="/contact"
-              className="navbar8-link22 thq-body-small thq-link"
+            </a>
+            <a
+              href={props.link3Url}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="navbar8-link31 thq-link thq-body-small"
             >
-              {props.link21 ?? (
+              {props.link3 ?? (
                 <Fragment>
-                  <span className="navbar8-text18">
-                    <span>{/*locale-text_LP5NEL*/}</span>
-                  </span>
+                  <span className="navbar8-text22">About Us</span>
                 </Fragment>
               )}
-            </Link>
+            </a>
+            <div
+              onClick={() => setLink5DropdownVisible(!link5DropdownVisible)}
+              className="navbar8-link4-dropdown-trigger"
+            >
+              <span className="thq-link thq-body-small">
+                {props.link4 ?? (
+                  <Fragment>
+                    <span className="navbar8-text26">Contact Us</span>
+                  </Fragment>
+                )}
+              </span>
+              <div className="navbar8-icon-container1">
+                {link5DropdownVisible === true && (
+                  <div className="navbar8-container2">
+                    <svg viewBox="0 0 1024 1024" className="navbar8-icon10">
+                      <path d="M298 426h428l-214 214z"></path>
+                    </svg>
+                  </div>
+                )}
+                {link5DropdownVisible === false && (
+                  <div className="navbar8-container3">
+                    <svg viewBox="0 0 1024 1024" className="navbar8-icon12">
+                      <path d="M426 726v-428l214 214z"></path>
+                    </svg>
+                  </div>
+                )}
+              </div>
+            </div>
           </nav>
           <div className="navbar8-buttons1">
             <button className="navbar8-action11 thq-button-filled thq-button-animated">
-              <Link to="/solutions" className="navbar8-navlink1">
+              <span>
                 {props.action1 ?? (
                   <Fragment>
-                    <span className="navbar8-text21">
-                      <span>{/*locale-text_mnx6WS*/}</span>
-                    </span>
+                    <span className="navbar8-text27">Main Action</span>
                   </Fragment>
                 )}
-              </Link>
+              </span>
             </button>
-            <button className="navbar8-action21 thq-button-animated thq-button-outline">
-              <Link to="/contact" className="navbar8-navlink2">
+            <button className="navbar8-action21 thq-button-outline thq-button-animated">
+              <span>
                 {props.action2 ?? (
                   <Fragment>
-                    <span className="navbar8-text22">
-                      <span>{/*locale-text_2xBa1n*/}</span>
-                    </span>
+                    <span className="navbar8-text23">Secondary Action</span>
                   </Fragment>
                 )}
-              </Link>
+              </span>
             </button>
           </div>
         </div>
         <div data-thq="thq-burger-menu" className="navbar8-burger-menu">
-          <svg viewBox="0 0 1024 1024" className="navbar8-icon10">
+          <svg viewBox="0 0 1024 1024" className="navbar8-icon14">
             <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
           </svg>
         </div>
@@ -92,7 +110,7 @@ const Navbar8 = (props) => {
                 className="navbar8-logo"
               />
               <div data-thq="thq-close-menu" className="navbar8-close-menu">
-                <svg viewBox="0 0 1024 1024" className="navbar8-icon12">
+                <svg viewBox="0 0 1024 1024" className="navbar8-icon16">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                 </svg>
               </div>
@@ -100,34 +118,28 @@ const Navbar8 = (props) => {
             <nav className="navbar8-links2">
               <a
                 href={props.link1Url}
-                className="navbar8-link12 thq-body-small thq-link"
+                className="navbar8-link12 thq-link thq-body-small"
               >
                 {props.link1 ?? (
                   <Fragment>
-                    <span className="navbar8-text15">
-                      <span>{}</span>
-                    </span>
+                    <span className="navbar8-text15">Home</span>
                   </Fragment>
                 )}
               </a>
-              <a href={props.link2Url} className="thq-body-small thq-link">
+              <a href={props.link2Url} className="thq-link thq-body-small">
                 {props.link2 ?? (
                   <Fragment>
-                    <span className="navbar8-text17">
-                      <span>{}</span>
-                    </span>
+                    <span className="navbar8-text20">Services</span>
                   </Fragment>
                 )}
               </a>
               <a
                 href={props.link3Url}
-                className="navbar8-link3 thq-body-small thq-link"
+                className="navbar8-link32 thq-link thq-body-small"
               >
                 {props.link3 ?? (
                   <Fragment>
-                    <span className="navbar8-text16">
-                      <span>{/*locale-text_eJ8TBB*/}</span>
-                    </span>
+                    <span className="navbar8-text22">About Us</span>
                   </Fragment>
                 )}
               </a>
@@ -136,26 +148,24 @@ const Navbar8 = (props) => {
                   onClick={() => setLink5AccordionOpen(!link5AccordionOpen)}
                   className="navbar8-trigger"
                 >
-                  <span className="thq-body-small thq-link">
+                  <span className="thq-link thq-body-small">
                     {props.link4 ?? (
                       <Fragment>
-                        <span className="navbar8-text12">
-                          <span>{/*locale-text_IIoEvx*/}</span>
-                        </span>
+                        <span className="navbar8-text26">Contact Us</span>
                       </Fragment>
                     )}
                   </span>
-                  <div className="navbar8-icon-container">
+                  <div className="navbar8-icon-container2">
                     {link5AccordionOpen === true && (
-                      <div className="navbar8-container2">
-                        <svg viewBox="0 0 1024 1024" className="navbar8-icon14">
+                      <div className="navbar8-container4">
+                        <svg viewBox="0 0 1024 1024" className="navbar8-icon18">
                           <path d="M298 426h428l-214 214z"></path>
                         </svg>
                       </div>
                     )}
                     {link5AccordionOpen === false && (
-                      <div className="navbar8-container3">
-                        <svg viewBox="0 0 1024 1024" className="navbar8-icon16">
+                      <div className="navbar8-container5">
+                        <svg viewBox="0 0 1024 1024" className="navbar8-icon20">
                           <path d="M426 726v-428l214 214z"></path>
                         </svg>
                       </div>
@@ -163,7 +173,7 @@ const Navbar8 = (props) => {
                   </div>
                 </div>
                 {link5AccordionOpen === true && (
-                  <div className="navbar8-container4">
+                  <div className="navbar8-container6">
                     <a href={props.linkUrlPage1}>
                       <div className="navbar8-menu-item1">
                         <img
@@ -175,17 +185,15 @@ const Navbar8 = (props) => {
                           <span className="navbar8-page11 thq-body-large">
                             {props.page1 ?? (
                               <Fragment>
-                                <span className="navbar8-text25">
-                                  <span>{/*locale-text_p-Qtfn*/}</span>
-                                </span>
+                                <span className="navbar8-text24">Page One</span>
                               </Fragment>
                             )}
                           </span>
                           <span className="thq-body-small">
                             {props.page1Description ?? (
                               <Fragment>
-                                <span className="navbar8-text24">
-                                  <span>{/*locale-text_gm8NYh*/}</span>
+                                <span className="navbar8-text19">
+                                  Page One Description
                                 </span>
                               </Fragment>
                             )}
@@ -204,17 +212,15 @@ const Navbar8 = (props) => {
                           <span className="navbar8-page21 thq-body-large">
                             {props.page2 ?? (
                               <Fragment>
-                                <span className="navbar8-text26">
-                                  <span>{/*locale-text_3b6QMI*/}</span>
-                                </span>
+                                <span className="navbar8-text25">Page Two</span>
                               </Fragment>
                             )}
                           </span>
                           <span className="thq-body-small">
                             {props.page2Description ?? (
                               <Fragment>
-                                <span className="navbar8-text19">
-                                  <span>{/*locale-text_Wq5X9j*/}</span>
+                                <span className="navbar8-text18">
+                                  Page Two Description
                                 </span>
                               </Fragment>
                             )}
@@ -234,7 +240,7 @@ const Navbar8 = (props) => {
                             {props.page3 ?? (
                               <Fragment>
                                 <span className="navbar8-text14">
-                                  <span>{/*locale-text_Gm28Ag*/}</span>
+                                  Page Three
                                 </span>
                               </Fragment>
                             )}
@@ -242,8 +248,8 @@ const Navbar8 = (props) => {
                           <span className="thq-body-small">
                             {props.page3Description ?? (
                               <Fragment>
-                                <span className="navbar8-text13">
-                                  <span>{/*locale-text_KBLe0q*/}</span>
+                                <span className="navbar8-text21">
+                                  Page Three Description
                                 </span>
                               </Fragment>
                             )}
@@ -262,8 +268,8 @@ const Navbar8 = (props) => {
                           <span className="navbar8-page41 thq-body-large">
                             {props.page4 ?? (
                               <Fragment>
-                                <span className="navbar8-text23">
-                                  <span>{/*locale-text_bPB3MT*/}</span>
+                                <span className="navbar8-text17">
+                                  Page Four
                                 </span>
                               </Fragment>
                             )}
@@ -271,8 +277,8 @@ const Navbar8 = (props) => {
                           <span className="thq-body-small">
                             {props.page4Description ?? (
                               <Fragment>
-                                <span className="navbar8-text20">
-                                  <span>{/*locale-text_OhMZNY*/}</span>
+                                <span className="navbar8-text16">
+                                  Page Four Description
                                 </span>
                               </Fragment>
                             )}
@@ -289,9 +295,7 @@ const Navbar8 = (props) => {
                 <span>
                   {props.action1 ?? (
                     <Fragment>
-                      <span className="navbar8-text21">
-                        <span>{}</span>
-                      </span>
+                      <span className="navbar8-text27">Main Action</span>
                     </Fragment>
                   )}
                 </span>
@@ -300,9 +304,7 @@ const Navbar8 = (props) => {
                 <span>
                   {props.action2 ?? (
                     <Fragment>
-                      <span className="navbar8-text22">
-                        <span>{}</span>
-                      </span>
+                      <span className="navbar8-text23">Secondary Action</span>
                     </Fragment>
                   )}
                 </span>
@@ -331,7 +333,7 @@ const Navbar8 = (props) => {
           </div>
         </div>
         {link5DropdownVisible === true && (
-          <div className="navbar8-container5 thq-box-shadow">
+          <div className="navbar8-container7 thq-box-shadow">
             <div className="navbar8-link5-menu-list">
               <a href={props.linkUrlPage1}>
                 <div className="navbar8-menu-item5">
@@ -344,17 +346,15 @@ const Navbar8 = (props) => {
                     <span className="navbar8-page12 thq-body-large">
                       {props.page1 ?? (
                         <Fragment>
-                          <span className="navbar8-text25">
-                            <span>{}</span>
-                          </span>
+                          <span className="navbar8-text24">Page One</span>
                         </Fragment>
                       )}
                     </span>
                     <span className="thq-body-small">
                       {props.page1Description ?? (
                         <Fragment>
-                          <span className="navbar8-text24">
-                            <span>{}</span>
+                          <span className="navbar8-text19">
+                            Page One Description
                           </span>
                         </Fragment>
                       )}
@@ -373,17 +373,15 @@ const Navbar8 = (props) => {
                     <span className="navbar8-page22 thq-body-large">
                       {props.page2 ?? (
                         <Fragment>
-                          <span className="navbar8-text26">
-                            <span>{}</span>
-                          </span>
+                          <span className="navbar8-text25">Page Two</span>
                         </Fragment>
                       )}
                     </span>
                     <span className="thq-body-small">
                       {props.page2Description ?? (
                         <Fragment>
-                          <span className="navbar8-text19">
-                            <span>{}</span>
+                          <span className="navbar8-text18">
+                            Page Two Description
                           </span>
                         </Fragment>
                       )}
@@ -402,17 +400,15 @@ const Navbar8 = (props) => {
                     <span className="navbar8-page32 thq-body-large">
                       {props.page3 ?? (
                         <Fragment>
-                          <span className="navbar8-text14">
-                            <span>{}</span>
-                          </span>
+                          <span className="navbar8-text14">Page Three</span>
                         </Fragment>
                       )}
                     </span>
                     <span className="thq-body-small">
                       {props.page3Description ?? (
                         <Fragment>
-                          <span className="navbar8-text13">
-                            <span>{}</span>
+                          <span className="navbar8-text21">
+                            Page Three Description
                           </span>
                         </Fragment>
                       )}
@@ -431,17 +427,15 @@ const Navbar8 = (props) => {
                     <span className="navbar8-page42 thq-body-large">
                       {props.page4 ?? (
                         <Fragment>
-                          <span className="navbar8-text23">
-                            <span>{}</span>
-                          </span>
+                          <span className="navbar8-text17">Page Four</span>
                         </Fragment>
                       )}
                     </span>
                     <span className="thq-body-small">
                       {props.page4Description ?? (
                         <Fragment>
-                          <span className="navbar8-text20">
-                            <span>{}</span>
+                          <span className="navbar8-text16">
+                            Page Four Description
                           </span>
                         </Fragment>
                       )}
@@ -456,7 +450,7 @@ const Navbar8 = (props) => {
       {link5DropdownVisible === true && (
         <div
           onClick={() => setLink5DropdownVisible(false)}
-          className="navbar8-container6"
+          className="navbar8-container8"
         ></div>
       )}
     </header>
@@ -464,84 +458,76 @@ const Navbar8 = (props) => {
 }
 
 Navbar8.defaultProps = {
-  link4: undefined,
-  image1Loading: '',
-  page2ImageSrc:
-    'https://images.unsplash.com/photo-1598413667303-43014eacbeb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NXw&ixlib=rb-4.1.0&q=80&w=1080',
-  logoAlt: 'Greatus Logo',
-  page3Description: undefined,
+  link1Url: 'https://www.teleporthq.io',
   page3: undefined,
-  link3Url: 'https://www.teleporthq.io',
-  page2ImageAlt: 'Services Image',
   link1: undefined,
-  link3: undefined,
-  link2: undefined,
-  linkUrlPage1: 'https://www.teleporthq.io',
-  page4ImageAlt: 'Contact Image',
-  link21: undefined,
-  page1ImageAlt: 'Home Image',
-  page2Description: undefined,
-  page4Description: undefined,
-  page3ImageSrc:
-    'https://images.unsplash.com/photo-1709934645859-f1ed8d3a4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NXw&ixlib=rb-4.1.0&q=80&w=1080',
-  action1: undefined,
-  page4ImageSrc:
-    'https://images.unsplash.com/photo-1669172973488-0f77d9d7a00c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NHw&ixlib=rb-4.1.0&q=80&w=1080',
-  action2: undefined,
-  rootClassName: '',
-  linkUrlPage2: 'https://www.teleporthq.io',
-  page3ImageAlt: 'About Us Image',
-  page4: undefined,
-  link2Url: 'https://www.teleporthq.io',
   logoSrc:
     'https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&force_format=original',
+  logoAlt: 'Greatus Logo',
+  page1ImageSrc:
+    'https://images.unsplash.com/photo-1742072594013-c87f855e29ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0MXw&ixlib=rb-4.1.0&q=80&w=1080',
+  page4Description: undefined,
+  page4: undefined,
+  page4ImageAlt: 'image',
   linkUrlPage4: 'https://www.teleporthq.io',
   linkUrlPage3: 'https://www.teleporthq.io',
+  link2Url: 'https://www.teleporthq.io',
+  page3ImageAlt: 'image',
+  page2Description: undefined,
   page1Description: undefined,
-  link1Url: 'https://www.teleporthq.io',
-  image1Src1: '/logo-square-1500h.jpg',
+  page3ImageSrc:
+    'https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  link2: undefined,
+  page3Description: undefined,
+  page4ImageSrc:
+    'https://images.unsplash.com/photo-1669424369424-095f78d9404c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  page2ImageAlt: 'image',
+  link3Url: 'https://www.teleporthq.io',
+  linkUrlPage2: 'https://www.teleporthq.io',
+  link3: undefined,
+  action2: undefined,
   page1: undefined,
-  page1ImageSrc:
-    'https://images.unsplash.com/photo-1640041124903-ebf2bb5933a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NHw&ixlib=rb-4.1.0&q=80&w=1080',
   page2: undefined,
+  page2ImageSrc:
+    'https://images.unsplash.com/photo-1553877522-43269d4ea984?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  page1ImageAlt: 'image',
+  link4: undefined,
+  action1: undefined,
+  linkUrlPage1: 'https://www.teleporthq.io',
 }
 
 Navbar8.propTypes = {
-  link4: PropTypes.element,
-  image1Loading: PropTypes.string,
-  page2ImageSrc: PropTypes.string,
-  logoAlt: PropTypes.string,
-  page3Description: PropTypes.element,
+  link1Url: PropTypes.string,
   page3: PropTypes.element,
-  link3Url: PropTypes.string,
-  page2ImageAlt: PropTypes.string,
   link1: PropTypes.element,
-  link3: PropTypes.element,
-  link2: PropTypes.element,
-  linkUrlPage1: PropTypes.string,
-  page4ImageAlt: PropTypes.string,
-  link21: PropTypes.element,
-  page1ImageAlt: PropTypes.string,
-  page2Description: PropTypes.element,
-  page4Description: PropTypes.element,
-  page3ImageSrc: PropTypes.string,
-  action1: PropTypes.element,
-  page4ImageSrc: PropTypes.string,
-  action2: PropTypes.element,
-  rootClassName: PropTypes.string,
-  linkUrlPage2: PropTypes.string,
-  page3ImageAlt: PropTypes.string,
-  page4: PropTypes.element,
-  link2Url: PropTypes.string,
   logoSrc: PropTypes.string,
+  logoAlt: PropTypes.string,
+  page1ImageSrc: PropTypes.string,
+  page4Description: PropTypes.element,
+  page4: PropTypes.element,
+  page4ImageAlt: PropTypes.string,
   linkUrlPage4: PropTypes.string,
   linkUrlPage3: PropTypes.string,
+  link2Url: PropTypes.string,
+  page3ImageAlt: PropTypes.string,
+  page2Description: PropTypes.element,
   page1Description: PropTypes.element,
-  link1Url: PropTypes.string,
-  image1Src1: PropTypes.string,
+  page3ImageSrc: PropTypes.string,
+  link2: PropTypes.element,
+  page3Description: PropTypes.element,
+  page4ImageSrc: PropTypes.string,
+  page2ImageAlt: PropTypes.string,
+  link3Url: PropTypes.string,
+  linkUrlPage2: PropTypes.string,
+  link3: PropTypes.element,
+  action2: PropTypes.element,
   page1: PropTypes.element,
-  page1ImageSrc: PropTypes.string,
   page2: PropTypes.element,
+  page2ImageSrc: PropTypes.string,
+  page1ImageAlt: PropTypes.string,
+  link4: PropTypes.element,
+  action1: PropTypes.element,
+  linkUrlPage1: PropTypes.string,
 }
 
 export default Navbar8

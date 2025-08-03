@@ -42,14 +42,6 @@
   padding-top: var(--dl-layout-space-unit);
 }
  
-.hero17-text3 {
-  text-decoration: none;
-}
- 
-.hero17-button2 {
-  text-decoration: none;
-}
- 
 .hero17-content2 {
   gap: var(--dl-layout-space-oneandhalfunits);
   width: 100%;

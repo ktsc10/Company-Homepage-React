@@ -17,33 +17,6 @@
   flex-direction: column;
 }
  
-.footer4-container1 {
-  width: auto;
-  height: 140px;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  justify-content: center;
-}
- 
-.footer4-container2 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
- 
-.footer4-container3 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
- 
 .footer4-content {
   gap: var(--dl-layout-space-twounits);
   display: flex;
@@ -51,7 +24,7 @@
   flex-direction: column;
 }
  
-.footer4-logo {
+.footer4-logo1 {
   gap: 24px;
   display: flex;
   overflow: hidden;
@@ -59,19 +32,14 @@
   flex-direction: column;
 }
  
-.footer4-image {
-  width: var(--dl-layout-size-large);
-  object-fit: cover;
+.footer4-logo2 {
+  height: 2rem;
 }
  
-.footer4-text1 {
-  font-size: 48px;
-  font-style: normal;
-  margin-top: var(--dl-layout-space-twounits);
-  text-align: left;
-  font-family: "Roboto";
-  font-weight: 700;
-  margin-bottom: var(--dl-layout-space-oneandhalfunits);
+.footer4-links {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  align-items: flex-start;
 }
  
 .footer4-credits {
@@ -90,7 +58,7 @@
   justify-content: space-between;
 }
  
-.footer4-container4 {
+.footer4-container {
   display: flex;
   align-items: flex-start;
 }
@@ -101,37 +69,42 @@
   align-items: flex-start;
 }
  
-.footer4-text3 {
+.footer4-text11 {
   fill: var(--dl-color-theme-neutral-dark);
   color: var(--dl-color-theme-neutral-dark);
-  text-decoration: none;
 }
  
-.footer4-text4 {
-  text-decoration: none;
-}
- 
-.footer4-text5 {
-  text-decoration: none;
-}
- 
-.footer4-text6 {
+.footer4-text14 {
   display: inline-block;
 }
  
-.footer4-text7 {
+.footer4-text15 {
   display: inline-block;
 }
  
-.footer4-text8 {
+.footer4-text16 {
   display: inline-block;
 }
  
-.footer4-text9 {
+.footer4-text17 {
   display: inline-block;
 }
  
-
+.footer4-text18 {
+  display: inline-block;
+}
+ 
+.footer4-text19 {
+  display: inline-block;
+}
+ 
+.footer4-text20 {
+  display: inline-block;
+}
+ 
+.footer4-text21 {
+  display: inline-block;
+}
  
 @media(max-width: 767px) {
   .footer4-row {
@@ -145,6 +118,9 @@
 @media(max-width: 479px) {
   .footer4-max-width {
     gap: var(--dl-layout-space-oneandhalfunits);
+  }
+  .footer4-links {
+    flex-direction: column;
   }
   .footer4-footer-links {
     align-items: center;

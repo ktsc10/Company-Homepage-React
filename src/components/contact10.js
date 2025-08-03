@@ -13,17 +13,16 @@ const Contact10 = (props) => {
             <h2 className="thq-heading-2">
               {props.heading1 ?? (
                 <Fragment>
-                  <span className="contact10-text8">
-                    <span>{/*locale-text_-a-VJ_*/}</span>
-                  </span>
+                  <span className="contact10-text17">Locations</span>
                 </Fragment>
               )}
             </h2>
             <p className="thq-body-large">
               {props.content1 ?? (
                 <Fragment>
-                  <span className="contact10-text7">
-                    <span>{/*locale-text_22chjj*/}</span>
+                  <span className="contact10-text19">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in ero.
                   </span>
                 </Fragment>
               )}
@@ -35,22 +34,20 @@ const Contact10 = (props) => {
             <img
               alt={props.location1ImageAlt}
               src={props.location1ImageSrc}
-              className="contact10-image thq-img-ratio-16-9"
+              className="contact10-image1 thq-img-ratio-16-9"
             />
-            <h3 className="contact10-text3 thq-heading-3">
+            <h3 className="contact10-text12 thq-heading-3">
               {props.location1 ?? (
                 <Fragment>
-                  <span className="contact10-text5">
-                    <span>{/*locale-text_nB-JtV*/}</span>
-                  </span>
+                  <span className="contact10-text16">New York Office</span>
                 </Fragment>
               )}
             </h3>
             <p className="thq-body-large">
               {props.location1Description ?? (
                 <Fragment>
-                  <span className="contact10-text6">
-                    <span>{/*locale-text_-5oOSy*/}</span>
+                  <span className="contact10-text21">
+                    123 Main Street, New York, NY 10001
                   </span>
                 </Fragment>
               )}
@@ -60,21 +57,42 @@ const Contact10 = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="thq-body-small thq-button-flat"
+                className="thq-button-flat thq-body-small"
               >
-                <span>{/*locale-text_8p1_EN*/}</span>
+                Get directions
               </a>
             </div>
           </div>
           <div className="contact10-container4">
+            <img
+              alt={props.location2ImageAlt}
+              src={props.location2ImageSrc}
+              className="contact10-image2 thq-img-ratio-16-9"
+            />
+            <h3 className="contact10-text14 thq-heading-3">
+              {props.location2 ?? (
+                <Fragment>
+                  <span className="contact10-text20">Los Angeles Office</span>
+                </Fragment>
+              )}
+            </h3>
+            <p className="thq-body-large">
+              {props.location2Description ?? (
+                <Fragment>
+                  <span className="contact10-text18">
+                    456 Palm Avenue, Los Angeles, CA 90001
+                  </span>
+                </Fragment>
+              )}
+            </p>
             <div className="contact10-container5">
               <a
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="thq-body-small thq-button-flat"
+                className="thq-button-flat thq-body-small"
               >
-                <span>{/*locale-text_MhPvV0*/}</span>
+                Get directions
               </a>
             </div>
           </div>
@@ -85,22 +103,31 @@ const Contact10 = (props) => {
 }
 
 Contact10.defaultProps = {
-  location1ImageSrc:
-    'https://images.unsplash.com/photo-1556075798-4825dfaaf498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NXw&ixlib=rb-4.1.0&q=80&w=1080',
   location1: undefined,
-  location1Description: undefined,
-  location1ImageAlt: 'Greatus Headquarters Image',
-  content1: undefined,
   heading1: undefined,
+  location2Description: undefined,
+  location2ImageSrc:
+    'https://images.unsplash.com/photo-1531498860502-7c67cf02f657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0MXw&ixlib=rb-4.1.0&q=80&w=1080',
+  location2ImageAlt: 'Los Angeles Office Image',
+  content1: undefined,
+  location2: undefined,
+  location1ImageSrc:
+    'https://images.unsplash.com/photo-1630522205160-14c82dd2ac6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  location1Description: undefined,
+  location1ImageAlt: 'New York Office Image',
 }
 
 Contact10.propTypes = {
-  location1ImageSrc: PropTypes.string,
   location1: PropTypes.element,
+  heading1: PropTypes.element,
+  location2Description: PropTypes.element,
+  location2ImageSrc: PropTypes.string,
+  location2ImageAlt: PropTypes.string,
+  content1: PropTypes.element,
+  location2: PropTypes.element,
+  location1ImageSrc: PropTypes.string,
   location1Description: PropTypes.element,
   location1ImageAlt: PropTypes.string,
-  content1: PropTypes.element,
-  heading1: PropTypes.element,
 }
 
 export default Contact10

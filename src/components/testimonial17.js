@@ -12,17 +12,17 @@ const Testimonial17 = (props) => {
           <h2 className="thq-heading-2">
             {props.heading1 ?? (
               <Fragment>
-                <span className="testimonial17-text26">
-                  <span>{/*locale-text_keVIzX*/}</span>
-                </span>
+                <span className="testimonial17-text30">Testimonials</span>
               </Fragment>
             )}
           </h2>
           <span className="testimonial17-text11 thq-body-small">
             {props.content1 ?? (
               <Fragment>
-                <span className="testimonial17-text27">
-                  <span>{/*locale-text__yhsDY*/}</span>
+                <span className="testimonial17-text34">
+                  Greatus provided exceptional IT consultancy services that
+                  helped us streamline our operations and improve efficiency.
+                  Their expertise is unmatched.
                 </span>
               </Fragment>
             )}
@@ -45,8 +45,8 @@ const Testimonial17 = (props) => {
                     <strong className="thq-body-large">
                       {props.author1Name ?? (
                         <Fragment>
-                          <span className="testimonial17-text34">
-                            <span>{/*locale-text_CySVOw*/}</span>
+                          <span className="testimonial17-text31">
+                            John Smith
                           </span>
                         </Fragment>
                       )}
@@ -54,8 +54,8 @@ const Testimonial17 = (props) => {
                     <span className="thq-body-small">
                       {props.author1Position ?? (
                         <Fragment>
-                          <span className="testimonial17-text24">
-                            <span>{/*locale-text_eOp2YF*/}</span>
+                          <span className="testimonial17-text27">
+                            CEO, Tech Solutions Inc.
                           </span>
                         </Fragment>
                       )}
@@ -66,7 +66,10 @@ const Testimonial17 = (props) => {
                   {props.review1 ?? (
                     <Fragment>
                       <span className="testimonial17-text36">
-                        <span>{/*locale-text_brb4cV*/}</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum
+                        nulla.
                       </span>
                     </Fragment>
                   )}
@@ -90,8 +93,8 @@ const Testimonial17 = (props) => {
                     <strong className="thq-body-large">
                       {props.author2Name ?? (
                         <Fragment>
-                          <span className="testimonial17-text32">
-                            <span>{/*locale-text_sRNqGL*/}</span>
+                          <span className="testimonial17-text33">
+                            Emily Johnson
                           </span>
                         </Fragment>
                       )}
@@ -99,8 +102,8 @@ const Testimonial17 = (props) => {
                     <span className="thq-body-small">
                       {props.author2Position ?? (
                         <Fragment>
-                          <span className="testimonial17-text25">
-                            <span>{/*locale-text_8Zc4vf*/}</span>
+                          <span className="testimonial17-text35">
+                            CTO, Data Innovations Co.
                           </span>
                         </Fragment>
                       )}
@@ -110,8 +113,10 @@ const Testimonial17 = (props) => {
                 <span className="testimonial17-text17 thq-body-small">
                   {props.review2 ?? (
                     <Fragment>
-                      <span className="testimonial17-text31">
-                        <span>{/*locale-text_kEWGqN*/}</span>
+                      <span className="testimonial17-text37">
+                        Working with Greatus was a game-changer for our company.
+                        Their IT infrastructure design was top-notch and
+                        tailored to our specific needs.
                       </span>
                     </Fragment>
                   )}
@@ -135,8 +140,8 @@ const Testimonial17 = (props) => {
                     <strong className="thq-body-large">
                       {props.author3Name ?? (
                         <Fragment>
-                          <span className="testimonial17-text33">
-                            <span>{/*locale-text_NyF9Tt*/}</span>
+                          <span className="testimonial17-text25">
+                            Michael Lee
                           </span>
                         </Fragment>
                       )}
@@ -144,8 +149,8 @@ const Testimonial17 = (props) => {
                     <span className="thq-body-small">
                       {props.author3Position ?? (
                         <Fragment>
-                          <span className="testimonial17-text35">
-                            <span>{/*locale-text_ZDUk9j*/}</span>
+                          <span className="testimonial17-text24">
+                            CISO, SecureNet Corp.
                           </span>
                         </Fragment>
                       )}
@@ -155,8 +160,10 @@ const Testimonial17 = (props) => {
                 <span className="testimonial17-text20 thq-body-small">
                   {props.review3 ?? (
                     <Fragment>
-                      <span className="testimonial17-text37">
-                        <span>{/*locale-text_E_PS-T*/}</span>
+                      <span className="testimonial17-text32">
+                        Greatus&apos;s cybersecurity solutions were instrumental
+                        in enhancing our data protection measures. I highly
+                        recommend their services.
                       </span>
                     </Fragment>
                   )}
@@ -180,8 +187,8 @@ const Testimonial17 = (props) => {
                     <strong className="thq-body-large">
                       {props.author4Name ?? (
                         <Fragment>
-                          <span className="testimonial17-text28">
-                            <span>{/*locale-text_7hRDnJ*/}</span>
+                          <span className="testimonial17-text29">
+                            Sarah Adams
                           </span>
                         </Fragment>
                       )}
@@ -189,8 +196,8 @@ const Testimonial17 = (props) => {
                     <span className="thq-body-small">
                       {props.author4Position ?? (
                         <Fragment>
-                          <span className="testimonial17-text29">
-                            <span>{/*locale-text_TNxqOU*/}</span>
+                          <span className="testimonial17-text26">
+                            Head of Development, Softcode Solutions
                           </span>
                         </Fragment>
                       )}
@@ -200,8 +207,10 @@ const Testimonial17 = (props) => {
                 <span className="testimonial17-text23 thq-body-small">
                   {props.review4 ?? (
                     <Fragment>
-                      <span className="testimonial17-text30">
-                        <span>{/*locale-text_Uk0ZTW*/}</span>
+                      <span className="testimonial17-text28">
+                        The software development expertise of Greatus helped us
+                        create innovative solutions for our clients. They are
+                        truly a reliable partner.
                       </span>
                     </Fragment>
                   )}
@@ -216,57 +225,57 @@ const Testimonial17 = (props) => {
 }
 
 Testimonial17.defaultProps = {
+  author3Src:
+    'https://images.unsplash.com/photo-1624561272659-224ea122b2e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  author3Position: undefined,
+  author3Name: undefined,
+  author4Position: undefined,
   author1Position: undefined,
-  author2Position: undefined,
-  author3Alt: 'Image of Michael Johnson',
-  author4Src:
-    'https://images.unsplash.com/photo-1511632765486-a01980e01a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  author2Alt: 'Image of Emily Johnson',
+  author4Alt: 'Image of Sarah Adams',
+  review4: undefined,
+  author4Name: undefined,
   heading1: undefined,
   author2Src:
-    'https://images.unsplash.com/photo-1603162361777-165a7fd9b780?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NHw&ixlib=rb-4.1.0&q=80&w=1080',
-  author1Alt: 'Image of John Doe',
-  content1: undefined,
-  author4Name: undefined,
-  author1Src:
-    'https://images.unsplash.com/photo-1680965422752-eae810e8e1e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NHw&ixlib=rb-4.1.0&q=80&w=1080',
-  author4Position: undefined,
-  review4: undefined,
-  review2: undefined,
-  author2Name: undefined,
-  author3Name: undefined,
+    'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  author4Src:
+    'https://images.unsplash.com/photo-1504593811423-6dd665756598?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0MXw&ixlib=rb-4.1.0&q=80&w=1080',
   author1Name: undefined,
-  author4Alt: 'Image of Sarah Lee',
-  author3Position: undefined,
-  review1: undefined,
-  author3Src:
-    'https://images.unsplash.com/photo-1598198414976-ddb788ec80c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NXw&ixlib=rb-4.1.0&q=80&w=1080',
-  author2Alt: 'Image of Jane Smith',
   review3: undefined,
+  author2Name: undefined,
+  content1: undefined,
+  author3Alt: 'Image of Michael Lee',
+  author1Alt: 'Image of John Smith',
+  author2Position: undefined,
+  review1: undefined,
+  author1Src:
+    'https://images.unsplash.com/photo-1440589473619-3cde28941638?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0MXw&ixlib=rb-4.1.0&q=80&w=1080',
+  review2: undefined,
 }
 
 Testimonial17.propTypes = {
+  author3Src: PropTypes.string,
+  author3Position: PropTypes.element,
+  author3Name: PropTypes.element,
+  author4Position: PropTypes.element,
   author1Position: PropTypes.element,
-  author2Position: PropTypes.element,
-  author3Alt: PropTypes.string,
-  author4Src: PropTypes.string,
+  author2Alt: PropTypes.string,
+  author4Alt: PropTypes.string,
+  review4: PropTypes.element,
+  author4Name: PropTypes.element,
   heading1: PropTypes.element,
   author2Src: PropTypes.string,
-  author1Alt: PropTypes.string,
-  content1: PropTypes.element,
-  author4Name: PropTypes.element,
-  author1Src: PropTypes.string,
-  author4Position: PropTypes.element,
-  review4: PropTypes.element,
-  review2: PropTypes.element,
-  author2Name: PropTypes.element,
-  author3Name: PropTypes.element,
+  author4Src: PropTypes.string,
   author1Name: PropTypes.element,
-  author4Alt: PropTypes.string,
-  author3Position: PropTypes.element,
-  review1: PropTypes.element,
-  author3Src: PropTypes.string,
-  author2Alt: PropTypes.string,
   review3: PropTypes.element,
+  author2Name: PropTypes.element,
+  content1: PropTypes.element,
+  author3Alt: PropTypes.string,
+  author1Alt: PropTypes.string,
+  author2Position: PropTypes.element,
+  review1: PropTypes.element,
+  author1Src: PropTypes.string,
+  review2: PropTypes.element,
 }
 
 export default Testimonial17

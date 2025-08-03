@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
@@ -14,8 +13,8 @@ const Hero17 = (props) => {
           <h1 className="hero17-text1 thq-heading-1">
             {props.heading1 ?? (
               <Fragment>
-                <span className="hero17-text8">
-                  <span>{/*locale-text_DvN7dj*/}</span>
+                <span className="hero17-text5">
+                  Empower Your Business with Greatus IT Consultancy
                 </span>
               </Fragment>
             )}
@@ -24,7 +23,9 @@ const Hero17 = (props) => {
             {props.content1 ?? (
               <Fragment>
                 <span className="hero17-text7">
-                  <span>{/*locale-text_VShwiR*/}</span>
+                  With over 25 years of experience, Greatus is your trusted
+                  partner for IT infrastructure design, software development,
+                  and cybersecurity solutions.
                 </span>
               </Fragment>
             )}
@@ -32,31 +33,27 @@ const Hero17 = (props) => {
         </div>
         <div className="hero17-actions">
           <button className="thq-button-filled hero17-button1">
-            <Link to="/solutions" className="hero17-text3 thq-body-small">
+            <span className="thq-body-small">
               {props.action1 ?? (
                 <Fragment>
-                  <span className="hero17-text5">
-                    <span>{/*locale-text_I1R4MV*/}</span>
-                  </span>
-                </Fragment>
-              )}
-            </Link>
-          </button>
-          <Link to="/contact" className="hero17-button2 thq-button-outline">
-            <span className="thq-body-small">
-              {props.action2 ?? (
-                <Fragment>
-                  <span className="hero17-text6">
-                    <span>{/*locale-text_q14r_J*/}</span>
-                  </span>
+                  <span className="hero17-text8">Learn More</span>
                 </Fragment>
               )}
             </span>
-          </Link>
+          </button>
+          <button className="thq-button-outline hero17-button2">
+            <span className="thq-body-small">
+              {props.action2 ?? (
+                <Fragment>
+                  <span className="hero17-text6">Contact Us</span>
+                </Fragment>
+              )}
+            </span>
+          </button>
         </div>
       </div>
       <div className="hero17-content2">
-        <div className="hero17-row-container1 thq-mask-image-horizontal thq-animated-group-container-horizontal">
+        <div className="hero17-row-container1 thq-animated-group-container-horizontal thq-mask-image-horizontal">
           <div className="thq-animated-group-horizontal">
             <img
               alt={props.image1Alt}
@@ -122,7 +119,7 @@ const Hero17 = (props) => {
             />
           </div>
         </div>
-        <div className="hero17-row-container2 thq-mask-image-horizontal thq-animated-group-container-horizontal">
+        <div className="hero17-row-container2 thq-animated-group-container-horizontal thq-mask-image-horizontal">
           <div className="thq-animated-group-horizontal-reverse">
             <img
               alt={props.image7Alt}
@@ -220,77 +217,77 @@ const Hero17 = (props) => {
 }
 
 Hero17.defaultProps = {
-  action1: undefined,
-  image12Src:
-    'https://images.unsplash.com/photo-1631624226983-655dea38053d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0Nnw&ixlib=rb-4.1.0&q=80&w=1080',
-  image7Alt: 'Hero Image',
-  image9Src:
-    'https://images.unsplash.com/photo-1643877323795-f2edf55cd33c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0N3w&ixlib=rb-4.1.0&q=80&w=1080',
-  image2Alt: 'Hero Image',
-  image5Src:
-    'https://images.unsplash.com/photo-1709572375995-62a53cb88110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0OHw&ixlib=rb-4.1.0&q=80&w=1080',
-  image11Alt: 'Hero Image',
-  action2: undefined,
-  image8Src:
-    'https://images.unsplash.com/photo-1646216119381-63c4ed3bf60c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0OHw&ixlib=rb-4.1.0&q=80&w=1080',
+  image3Src:
+    'https://images.unsplash.com/photo-1716497916271-65c49715bd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0MXw&ixlib=rb-4.1.0&q=80&w=1080',
   image12Alt: 'Hero Image',
-  image4Alt: 'Hero Image',
-  image5Alt: 'Hero Image',
+  image7Alt: 'Hero Image',
+  image12Src:
+    'https://images.unsplash.com/photo-1629993250958-7485ff1288bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0M3w&ixlib=rb-4.1.0&q=80&w=1080',
   image10Alt: 'Hero Image',
-  image1Src:
-    'https://images.unsplash.com/photo-1563457754158-43a343df68fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0OXw&ixlib=rb-4.1.0&q=80&w=1080',
-  image1Alt: 'Hero Image',
   image3Alt: 'Hero Image',
+  image11Src:
+    'https://images.unsplash.com/photo-1703022943822-0a1fa10cee23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  image5Src:
+    'https://images.unsplash.com/photo-1638029202288-451a89e0d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  image8Src:
+    'https://images.unsplash.com/photo-1590494165264-1ebe3602eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  image4Src:
+    'https://images.unsplash.com/photo-1716497916271-65c49715bd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  image11Alt: 'Hero Image',
+  image10Src:
+    'https://images.unsplash.com/photo-1631217866870-53feedcb8b7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  image2Alt: 'Hero Image',
   image6Alt: 'Hero Image',
   image2Src:
-    'https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NXw&ixlib=rb-4.1.0&q=80&w=1080',
-  image11Src:
-    'https://images.unsplash.com/photo-1657727534676-cac1bb160d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NXw&ixlib=rb-4.1.0&q=80&w=1080',
-  content1: undefined,
+    'https://images.unsplash.com/photo-1626722756487-7ed883549dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0MXw&ixlib=rb-4.1.0&q=80&w=1080',
   heading1: undefined,
-  image7Src:
-    'https://images.unsplash.com/photo-1684346605835-69888f742522?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0Nnw&ixlib=rb-4.1.0&q=80&w=1080',
-  image4Src:
-    'https://images.unsplash.com/photo-1748256467077-c75ef01579aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0OHw&ixlib=rb-4.1.0&q=80&w=1080',
-  image8Alt: 'Hero Image',
+  action2: undefined,
+  content1: undefined,
   image9Alt: 'Hero Image',
-  image10Src:
-    'https://images.unsplash.com/photo-1573496782646-e8d943a4bdd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0OHw&ixlib=rb-4.1.0&q=80&w=1080',
-  image3Src:
-    'https://images.unsplash.com/photo-1643877325038-f9a19083f6eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  image7Src:
+    'https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  image8Alt: 'Hero Image',
+  image4Alt: 'Hero Image',
+  image5Alt: 'Hero Image',
+  image9Src:
+    'https://images.unsplash.com/photo-1528921581519-52b9d779df2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0M3w&ixlib=rb-4.1.0&q=80&w=1080',
+  image1Src:
+    'https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0NXw&ixlib=rb-4.1.0&q=80&w=1080',
+  image1Alt: 'Hero Image',
   image6Src:
-    'https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIwMTE0Nnw&ixlib=rb-4.1.0&q=80&w=1080',
+    'https://images.unsplash.com/photo-1573496773905-f5b17e717f05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+  action1: undefined,
 }
 
 Hero17.propTypes = {
-  action1: PropTypes.element,
-  image12Src: PropTypes.string,
-  image7Alt: PropTypes.string,
-  image9Src: PropTypes.string,
-  image2Alt: PropTypes.string,
-  image5Src: PropTypes.string,
-  image11Alt: PropTypes.string,
-  action2: PropTypes.element,
-  image8Src: PropTypes.string,
+  image3Src: PropTypes.string,
   image12Alt: PropTypes.string,
-  image4Alt: PropTypes.string,
-  image5Alt: PropTypes.string,
+  image7Alt: PropTypes.string,
+  image12Src: PropTypes.string,
   image10Alt: PropTypes.string,
-  image1Src: PropTypes.string,
-  image1Alt: PropTypes.string,
   image3Alt: PropTypes.string,
+  image11Src: PropTypes.string,
+  image5Src: PropTypes.string,
+  image8Src: PropTypes.string,
+  image4Src: PropTypes.string,
+  image11Alt: PropTypes.string,
+  image10Src: PropTypes.string,
+  image2Alt: PropTypes.string,
   image6Alt: PropTypes.string,
   image2Src: PropTypes.string,
-  image11Src: PropTypes.string,
-  content1: PropTypes.element,
   heading1: PropTypes.element,
-  image7Src: PropTypes.string,
-  image4Src: PropTypes.string,
-  image8Alt: PropTypes.string,
+  action2: PropTypes.element,
+  content1: PropTypes.element,
   image9Alt: PropTypes.string,
-  image10Src: PropTypes.string,
-  image3Src: PropTypes.string,
+  image7Src: PropTypes.string,
+  image8Alt: PropTypes.string,
+  image4Alt: PropTypes.string,
+  image5Alt: PropTypes.string,
+  image9Src: PropTypes.string,
+  image1Src: PropTypes.string,
+  image1Alt: PropTypes.string,
   image6Src: PropTypes.string,
+  action1: PropTypes.element,
 }
 
 export default Hero17

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -7,70 +6,107 @@ import './footer4.css'
 
 const Footer4 = (props) => {
   return (
-    <footer
-      className={`footer4-footer7 thq-section-padding ${props.rootClassName} `}
-    >
+    <footer className="footer4-footer7 thq-section-padding">
       <div className="footer4-max-width thq-section-max-width">
-        <div className="footer4-container1">
-          <div className="footer4-container2">
-            <div className="footer4-container3">
-              <div className="footer4-content">
-                <div className="footer4-logo">
-                  <img
-                    alt={props.imageAlt}
-                    src={props.imageSrc}
-                    className="footer4-image"
-                  />
-                </div>
-              </div>
-            </div>
+        <div className="footer4-content">
+          <div className="footer4-logo1">
+            <img
+              alt={props.logoAlt}
+              src={props.logoSrc}
+              className="footer4-logo2"
+            />
           </div>
-          <span className="footer4-text1">
-            {props.text ?? (
-              <Fragment>
-                <span className="footer4-text9">
-                  <span>{/*locale-text_NXvBHz*/}</span>
-                </span>
-              </Fragment>
-            )}
-          </span>
+          <div className="footer4-links">
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="thq-body-small"
+            >
+              {props.link1 ?? (
+                <Fragment>
+                  <span className="footer4-text15">Services</span>
+                </Fragment>
+              )}
+            </a>
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="thq-body-small"
+            >
+              {props.link2 ?? (
+                <Fragment>
+                  <span className="footer4-text20">About Us</span>
+                </Fragment>
+              )}
+            </a>
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="thq-body-small"
+            >
+              {props.link3 ?? (
+                <Fragment>
+                  <span className="footer4-text16">Contact Us</span>
+                </Fragment>
+              )}
+            </a>
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="thq-body-small"
+            >
+              {props.link4 ?? (
+                <Fragment>
+                  <span className="footer4-text18">Privacy Policy</span>
+                </Fragment>
+              )}
+            </a>
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="thq-body-small"
+            >
+              {props.link5 ?? (
+                <Fragment>
+                  <span className="footer4-text14">Terms of Service</span>
+                </Fragment>
+              )}
+            </a>
+          </div>
         </div>
         <div className="footer4-credits">
           <div className="thq-divider-horizontal"></div>
           <div className="footer4-row">
-            <div className="footer4-container4">
-              <span className="thq-body-small">
-                <span>{/*locale-text_LP2FeD*/}</span>
-              </span>
+            <div className="footer4-container">
+              <span className="thq-body-small">© 2024 TeleportHQ</span>
             </div>
             <div className="footer4-footer-links">
-              <Link to="/solutions" className="footer4-text3 thq-body-small">
+              <span className="footer4-text11 thq-body-small">
                 {props.privacyLink ?? (
                   <Fragment>
-                    <span className="footer4-text8">
-                      <span>{/*locale-text_i5MBT9*/}</span>
-                    </span>
+                    <span className="footer4-text21">Privacy Policy</span>
                   </Fragment>
                 )}
-              </Link>
-              <Link to="/solutions" className="footer4-text4 thq-body-small">
+              </span>
+              <span className="thq-body-small">
                 {props.termsLink ?? (
                   <Fragment>
-                    <span className="footer4-text7">
-                      <span>{/*locale-text_VZ_31I*/}</span>
-                    </span>
+                    <span className="footer4-text19">Terms of Service</span>
                   </Fragment>
                 )}
-              </Link>
-              <Link to="/solutions" className="footer4-text5 thq-body-small">
+              </span>
+              <span className="thq-body-small">
                 {props.cookiesLink ?? (
                   <Fragment>
-                    <span className="footer4-text6">
-                      <span>{/*locale-text_d5_K5V*/}</span>
-                    </span>
+                    <span className="footer4-text17">Cookies Policy</span>
                   </Fragment>
                 )}
-              </Link>
+              </span>
             </div>
           </div>
         </div>
@@ -80,23 +116,29 @@ const Footer4 = (props) => {
 }
 
 Footer4.defaultProps = {
+  link5: undefined,
+  logoSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
+  link1: undefined,
+  link3: undefined,
   cookiesLink: undefined,
-  rootClassName: '',
+  link4: undefined,
   termsLink: undefined,
+  logoAlt: 'Greatus Logo',
+  link2: undefined,
   privacyLink: undefined,
-  imageAlt: 'image',
-  text: undefined,
-  imageSrc: '/logo-square-200h.jpg',
 }
 
 Footer4.propTypes = {
+  link5: PropTypes.element,
+  logoSrc: PropTypes.string,
+  link1: PropTypes.element,
+  link3: PropTypes.element,
   cookiesLink: PropTypes.element,
-  rootClassName: PropTypes.string,
+  link4: PropTypes.element,
   termsLink: PropTypes.element,
+  logoAlt: PropTypes.string,
+  link2: PropTypes.element,
   privacyLink: PropTypes.element,
-  imageAlt: PropTypes.string,
-  text: PropTypes.element,
-  imageSrc: PropTypes.string,
 }
 
 export default Footer4
