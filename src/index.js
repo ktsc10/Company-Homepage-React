@@ -7,6 +7,7 @@ import {
   Redirect,
 } from 'react-router-dom'
 
+import './i18n'
 import './style.css'
 import Solutions from './views/solutions'
 import Home from './views/home'
