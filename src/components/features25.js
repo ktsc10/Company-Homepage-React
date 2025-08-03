@@ -7,7 +7,14 @@ import './features25.css'
 const Features25 = (props) => {
   const [activeTab, setActiveTab] = useState(0)
   return (
-    <div className="thq-section-padding">
+    <div className={`thq-section-padding ${props.rootClassName} `}>
+      <h1 className="features25-text1 thq-heading-1">
+        {props.heading1 ?? (
+          <Fragment>
+            <span className="features25-text8">Our Solutions</span>
+          </Fragment>
+        )}
+      </h1>
       <div className="features25-container2 thq-section-max-width">
         <div className="features25-tabs-menu">
           <div
@@ -21,8 +28,8 @@ const Features25 = (props) => {
               <h2 className="thq-heading-2">
                 {props.feature1Title ?? (
                   <Fragment>
-                    <span className="features25-text4">
-                      IT Infrastructure Design and Implementation
+                    <span className="features25-text5">
+                      IT Infrastructure Implementation
                     </span>
                   </Fragment>
                 )}
@@ -30,7 +37,7 @@ const Features25 = (props) => {
               <span className="thq-body-small">
                 {props.feature1Description ?? (
                   <Fragment>
-                    <span className="features25-text6">
+                    <span className="features25-text7">
                       Expertise in designing and implementing robust IT
                       infrastructures tailored to meet specific business needs.
                     </span>
@@ -50,7 +57,7 @@ const Features25 = (props) => {
               <h2 className="thq-heading-2">
                 {props.feature2Title ?? (
                   <Fragment>
-                    <span className="features25-text1">
+                    <span className="features25-text2">
                       Software Development
                     </span>
                   </Fragment>
@@ -59,7 +66,7 @@ const Features25 = (props) => {
               <span className="thq-body-small">
                 {props.feature2Description ?? (
                   <Fragment>
-                    <span className="features25-text3">
+                    <span className="features25-text4">
                       Custom software development services to enhance
                       operational efficiency and drive business growth.
                     </span>
@@ -79,14 +86,16 @@ const Features25 = (props) => {
               <h2 className="thq-heading-2">
                 {props.feature3Title ?? (
                   <Fragment>
-                    <span className="features25-text2">Cybersecurity</span>
+                    <span className="features25-text3">
+                      Cybersecurity Solutions
+                    </span>
                   </Fragment>
                 )}
               </h2>
               <span className="thq-body-small">
                 {props.feature3Description ?? (
                   <Fragment>
-                    <span className="features25-text5">
+                    <span className="features25-text6">
                       Comprehensive cybersecurity solutions to protect data,
                       systems, and networks from potential threats.
                     </span>
@@ -127,19 +136,21 @@ const Features25 = (props) => {
 Features25.defaultProps = {
   feature2Title: undefined,
   feature3ImgSrc:
-    'https://images.unsplash.com/photo-1674577023740-715ef99c9c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+    'https://images.unsplash.com/photo-1614064548237-096f735f344f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDMxfHxjeWJlcnNlY3VyaXR5fGVufDB8fHx8MTc1NDIwODk3OHww&ixlib=rb-4.1.0&w=1400',
   feature3Title: undefined,
   feature2Description: undefined,
+  rootClassName: '',
   feature1ImgAlt: 'IT Infrastructure Design and Implementation Image',
   feature1Title: undefined,
   feature2ImgSrc:
-    'https://images.unsplash.com/photo-1634248893766-2540ac03ba1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0M3w&ixlib=rb-4.1.0&q=80&w=1080',
+    'https://images.unsplash.com/photo-1557562645-4eee56b29bc1?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDY1fHxhcHBsaWNhdGlvbiUyMGNvZGluZ3xlbnwwfHx8fDE3NTQyMTg2MzV8MA&ixlib=rb-4.1.0&w=1400',
   feature2ImgAlt: 'Software Development Image',
   feature3Description: undefined,
   feature3ImgAlt: 'Cybersecurity Image',
   feature1Description: undefined,
   feature1ImgSrc:
-    'https://images.unsplash.com/photo-1634498507905-3a4f8d7ba9e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NDIxNjM0Mnw&ixlib=rb-4.1.0&q=80&w=1080',
+    'https://images.unsplash.com/photo-1691435828932-911a7801adfb?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fG5ldHdvcmslMjBzZXJ2ZXJ8ZW58MHx8fHwxNzU0MjE4NDIxfDA&ixlib=rb-4.1.0&w=1400',
+  heading1: undefined,
 }
 
 Features25.propTypes = {
@@ -147,6 +158,7 @@ Features25.propTypes = {
   feature3ImgSrc: PropTypes.string,
   feature3Title: PropTypes.element,
   feature2Description: PropTypes.element,
+  rootClassName: PropTypes.string,
   feature1ImgAlt: PropTypes.string,
   feature1Title: PropTypes.element,
   feature2ImgSrc: PropTypes.string,
@@ -155,6 +167,7 @@ Features25.propTypes = {
   feature3ImgAlt: PropTypes.string,
   feature1Description: PropTypes.element,
   feature1ImgSrc: PropTypes.string,
+  heading1: PropTypes.element,
 }
 
 export default Features25

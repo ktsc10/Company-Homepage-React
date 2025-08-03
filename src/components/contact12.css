@@ -45,7 +45,7 @@
   flex-direction: column;
 }
  
-.contact12-text3 {
+.contact12-text12 {
   align-self: flex-start;
   text-align: center;
 }
@@ -65,32 +65,36 @@
   flex-direction: column;
 }
  
-.contact12-text4 {
+.contact12-text13 {
   align-self: flex-start;
   text-align: center;
+}
+ 
+.contact12-content6 {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
  
 .contact12-iframe {
   border: 0;
 }
  
-.contact12-text5 {
+.contact12-text14 {
   display: inline-block;
 }
  
-.contact12-text6 {
+.contact12-text15 {
   display: inline-block;
 }
  
-.contact12-text7 {
+.contact12-text16 {
   display: inline-block;
 }
  
-.contact12-text8 {
+.contact12-text19 {
   display: inline-block;
 }
- 
-
  
 
  

@@ -1,4 +1,4 @@
-.contact-container {
+.solution-container {
   width: 100%;
   display: flex;
   min-height: 100vh;
@@ -6,83 +6,95 @@
   flex-direction: column;
 }
  
-.contact-text10 {
+.solution-text10 {
   display: inline-block;
 }
  
-.contact-text11 {
+.solution-text11 {
   display: inline-block;
 }
  
-.contact-text12 {
+.solution-text12 {
   display: inline-block;
 }
  
-.contact-text13 {
+.solution-text13 {
   display: inline-block;
 }
  
-.contact-text14 {
+.solution-text14 {
   display: inline-block;
 }
  
-.contact-text15 {
+.solution-text15 {
   display: inline-block;
 }
  
-.contact-text16 {
+.solution-text16 {
   display: inline-block;
 }
  
-.contact-text17 {
+.solution-text17 {
   display: inline-block;
 }
  
-.contact-text18 {
+.solution-text18 {
   display: inline-block;
 }
  
-.contact-text19 {
+.solution-text19 {
   display: inline-block;
 }
  
-.contact-text20 {
+.solution-text20 {
   display: inline-block;
 }
  
-.contact-text21 {
+.solution-text21 {
   display: inline-block;
 }
  
-.contact-text22 {
+.solution-text22 {
   display: inline-block;
 }
  
-.contact-text23 {
+.solution-text23 {
   display: inline-block;
 }
  
-.contact-text24 {
+.solution-text24 {
   display: inline-block;
 }
  
-.contact-text25 {
+.solution-text25 {
   display: inline-block;
 }
  
-.contact-text26 {
+.solution-text26 {
   display: inline-block;
 }
  
-.contact-text27 {
+.solution-text27 {
   display: inline-block;
 }
  
-.contact-text31 {
+.solution-text28 {
   display: inline-block;
 }
  
-.contact-text34 {
+.solution-text29 {
+  display: inline-block;
+}
+ 
+.solution-text30 {
+  display: inline-block;
+}
+ 
+.solution-text31 {
+  display: inline-block;
+}
+ 
+.solution-text32 {
   color: #033366;
   display: inline-block;
   font-size: 36px;
@@ -91,14 +103,14 @@
   text-transform: uppercase;
 }
  
-.contact-text35 {
+.solution-text33 {
   display: inline-block;
 }
  
-.contact-text36 {
+.solution-text34 {
   display: inline-block;
 }
  
-.contact-text37 {
+.solution-text35 {
   display: inline-block;
 }

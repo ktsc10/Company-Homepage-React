@@ -1,3 +1,8 @@
+.features25-text1 {
+  height: 154px;
+  text-align: center;
+}
+ 
 .features25-container2 {
   width: 100%;
   display: grid;
@@ -150,10 +155,6 @@
   animation-timing-function: ease;
 }
  
-.features25-text1 {
-  display: inline-block;
-}
- 
 .features25-text2 {
   display: inline-block;
 }
@@ -173,6 +174,16 @@
 .features25-text6 {
   display: inline-block;
 }
+ 
+.features25-text7 {
+  display: inline-block;
+}
+ 
+.features25-text8 {
+  display: inline-block;
+}
+ 
+
  
 @media(max-width: 991px) {
   .features25-container2 {

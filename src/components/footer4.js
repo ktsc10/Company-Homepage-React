@@ -6,104 +6,53 @@ import './footer4.css'
 
 const Footer4 = (props) => {
   return (
-    <footer className="footer4-footer7 thq-section-padding">
+    <footer
+      className={`footer4-footer7 thq-section-padding ${props.rootClassName} `}
+    >
       <div className="footer4-max-width thq-section-max-width">
-        <div className="footer4-content">
-          <div className="footer4-logo1">
-            <img
-              alt={props.logoAlt}
-              src={props.logoSrc}
-              className="footer4-logo2"
-            />
+        <div className="footer4-container1">
+          <div className="footer4-content">
+            <div className="footer4-logo1">
+              <img
+                alt={props.logoAlt}
+                src={props.logoSrc}
+                className="footer4-logo2"
+              />
+            </div>
           </div>
-          <div className="footer4-links">
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link1 ?? (
-                <Fragment>
-                  <span className="footer4-text15">Services</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link2 ?? (
-                <Fragment>
-                  <span className="footer4-text20">About Us</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link3 ?? (
-                <Fragment>
-                  <span className="footer4-text16">Contact Us</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link4 ?? (
-                <Fragment>
-                  <span className="footer4-text18">Privacy Policy</span>
-                </Fragment>
-              )}
-            </a>
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="thq-body-small"
-            >
-              {props.link5 ?? (
-                <Fragment>
-                  <span className="footer4-text14">Terms of Service</span>
-                </Fragment>
-              )}
-            </a>
-          </div>
+          <span>
+            {props.text ?? (
+              <Fragment>
+                <span className="footer4-text8">GREATUS</span>
+              </Fragment>
+            )}
+          </span>
         </div>
         <div className="footer4-credits">
           <div className="thq-divider-horizontal"></div>
           <div className="footer4-row">
-            <div className="footer4-container">
-              <span className="thq-body-small">© 2024 TeleportHQ</span>
+            <div className="footer4-container2">
+              <span className="thq-body-small">© 2024 Greatus Pty Ltd</span>
             </div>
             <div className="footer4-footer-links">
-              <span className="footer4-text11 thq-body-small">
+              <span className="footer4-text3 thq-body-small">
                 {props.privacyLink ?? (
                   <Fragment>
-                    <span className="footer4-text21">Privacy Policy</span>
+                    <span className="footer4-text9">Privacy Policy</span>
                   </Fragment>
                 )}
               </span>
               <span className="thq-body-small">
                 {props.termsLink ?? (
                   <Fragment>
-                    <span className="footer4-text19">Terms of Service</span>
+                    <span className="footer4-text7">Terms of Service</span>
                   </Fragment>
                 )}
               </span>
               <span className="thq-body-small">
                 {props.cookiesLink ?? (
                   <Fragment>
-                    <span className="footer4-text17">Cookies Policy</span>
+                    <span className="footer4-text6">Cookies Policy</span>
                   </Fragment>
                 )}
               </span>
@@ -116,28 +65,22 @@ const Footer4 = (props) => {
 }
 
 Footer4.defaultProps = {
-  link5: undefined,
-  logoSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
-  link1: undefined,
-  link3: undefined,
+  logoSrc: '/logo-square-200h.gif',
   cookiesLink: undefined,
-  link4: undefined,
+  rootClassName: '',
   termsLink: undefined,
+  text: undefined,
   logoAlt: 'Greatus Logo',
-  link2: undefined,
   privacyLink: undefined,
 }
 
 Footer4.propTypes = {
-  link5: PropTypes.element,
   logoSrc: PropTypes.string,
-  link1: PropTypes.element,
-  link3: PropTypes.element,
   cookiesLink: PropTypes.element,
-  link4: PropTypes.element,
+  rootClassName: PropTypes.string,
   termsLink: PropTypes.element,
+  text: PropTypes.element,
   logoAlt: PropTypes.string,
-  link2: PropTypes.element,
   privacyLink: PropTypes.element,
 }
 

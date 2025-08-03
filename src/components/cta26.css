@@ -60,6 +60,10 @@
   justify-content: flex-end;
 }
  
+.cta26-navlink {
+  text-decoration: none;
+}
+ 
 .cta26-text4 {
   display: inline-block;
 }
@@ -86,7 +90,7 @@
     align-self: stretch;
     justify-content: center;
   }
-  .cta26-button {
+  .cta26-navlink {
     flex: 1;
   }
 }

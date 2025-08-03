@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
@@ -33,22 +34,22 @@ const Hero17 = (props) => {
         </div>
         <div className="hero17-actions">
           <button className="thq-button-filled hero17-button1">
-            <span className="thq-body-small">
+            <Link to="/solution" className="hero17-text3 thq-body-small">
               {props.action1 ?? (
                 <Fragment>
                   <span className="hero17-text8">Learn More</span>
                 </Fragment>
               )}
-            </span>
+            </Link>
           </button>
           <button className="thq-button-outline hero17-button2">
-            <span className="thq-body-small">
+            <Link to="/contact" className="hero17-text4 thq-body-small">
               {props.action2 ?? (
                 <Fragment>
                   <span className="hero17-text6">Contact Us</span>
                 </Fragment>
               )}
-            </span>
+            </Link>
           </button>
         </div>
       </div>
